@@ -1,0 +1,872 @@
+
+
+Tried:15 Apr 2025
+================
+I: 90x--tau--180x--tau--90y--|  	|-------90x-------tau--180x--tau--t2
+			         CPMG
+S: -----tau--180x--tau--90x--|  	|---t1--90q[x,y]--tau--180x--tau
+
+
+Trial:7 
+Change pop (95:5), del W (0.1), Kex 10000, P element :I 90x180y90x between CPMG blocks TR=40ms
+
+
+Observation: in phase  and intensity increased (very good)
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+CPMG  : Tollinger
+
+---------------|--Tau_RD--------Tau_RD--|   ----90y180x90y----|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180x--Tau_RD--|[n]--------------------
+
+Observation: increase from 4 to 16 but decrease thereafter, phase good
+
+CPMG_N	TR (ms)	N_CPMG_Pulse		Tau (ms)	v(cpmg,Hz)
+4	44.4		64		0.173611111111111	1440
+4	44.4		32		0.347222222222222	720
+4	44.4		16		0.694444444444444	360
+4	44.4		8		1.38888888888889	180
+4	44.4		4		2.77777777777778	90
+4	44.4		2		5.55555555555556	45
+
+
+TR=(1/90)*CPMG_N*1000
+
+Tau=TR/(2*N_CPMG_Pulse*2) 
+[(--pi--) + (--pi--)]*N_CPMG_Pulse = TR
+
+v(cpmg,Hz) ==1/(4*Tau) *1000
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Trial:6 
+Change pop (95:5), del W (0.1), Kex 2000, P element :I 90x180y90x between CPMG blocks
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+CPMG  : Tollinger
+
+---------------|--Tau_RD--------Tau_RD--|   ----90y180x90y----|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180x--Tau_RD--|[n]-------90y-----------
+
+Observation: increase from 4 to 16 but decrease thereafter, phase good
+
+
+
+
+Trial:6
+Change pop (95:5), del W (0.1), Kex 2000, P element :I 90x180y90x between CPMG blocks
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+CPMG  :
+
+---------------|--Tau_RD--------Tau_RD--|   ----90x180y90x----|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180y--Tau_RD--|[n]----------90y-------
+
+Observation: increase from 4 to 16 but decrease thereafter, phase good
+
+
+
+
+
+Trial:5
+Change pop (95:5), del W (0.1), Kex 500, P element :I 90x180y90x between CPMG blocks
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+CPMG  :
+
+---------------|--Tau_RD--------Tau_RD--|   ----90x180y90x----|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180y--Tau_RD--|[n]----------90y-------
+
+
+
+
+
+
+Trial:4
+Change pop, del W
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+
+
+
+
+Trial:3
+CPMG-RD (Lewis Kay): original
+
+---------------|--Tau_RD--------Tau_RD--|   -------180x-------|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180y--Tau_RD--|[n]----------90y-------
+
+
+
+from original excluded: --tau_eq--,|--tau--***--tau--|--90y--tau_eq--90y-- 
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+
+
+
+Trial:2
+CPMG-RD (Lewis Kay): original
+
+---------------|--Tau_RD--------Tau_RD--|   ------------------|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]------------------|--Tau_RD--180y--Tau_RD--|[n]--------------------
+
+
+from original excluded: --tau_eq--,|--tau--***--tau--|--90y--tau_eq--90y-- 
+
+
+Observation: in phase  and intensity decreased
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+
+
+
+
+
+
+Trial:1
+CPMG-RD (Lewis Kay): original
+
+---------------|--Tau_RD--------Tau_RD--|   -------180x-------|--Tau_RD--------Tau_RD--|-----------------------
+---------------|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180y--Tau_RD--|[n]--------------------
+
+
+from original excluded: --tau_eq--,|--tau--***--tau--|--90y--tau_eq--90y-- 
+
+
+Observation: phase distortions seen and intensity decreased
+L(tau)=L+R+K
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+
+
+
+
+
+
+
+
+Trial:0
+CPMG-RD (Lewis Kay): original
+
+---------------|--Tau_RD--------Tau_RD--|   -------180x-------|--Tau_RD--------Tau_RD--|-----------------------
+----------90x--|--Tau_RD--180y--Tau_RD--|[n]-------180x-------|--Tau_RD--180y--Tau_RD--|[n]--------------------
+
+
+from original excluded: --tau_eq--,|--tau--***--tau--|--90y--tau_eq--90y-- 
+
+
+Observation: phase good but intensity decreases
+L(tau)=L+R
+L(cpmg)=L+R+K
+L(t1)=L(H decp)+R+K
+L(t2)=L(N decp)+R+K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Std HSQC:
+
+I: 90x--tau--180x--tau--90y--||----------90x-------tau--180x--tau--t2
+			         
+S: -----tau--180x--tau--90x--||----t1----90q[x,y]--tau--180x--tau
+
+
+Details: commutation rules [Ix,Iy]=+ihIz
+  
+IzE -> -IyE
+===========  
+I: 90x--
+			         
+S: -----
+
+
+-IyE -> -2IxSz
+==============
+I: --tau--180x--tau--
+			         
+S: --tau--180x--tau--
+
+-2IxSz -> 2IzSz -> -2Izsy
+=========================
+
+I: --90y--
+			         
+S: ----90x--
+
+-2IzSy -> 2IzSy (cos), 2IzSx (sin) 
+==================================
+I: --||----------
+			         
+S: --||----t1----
+
+COS::
+=====
+2IzSy (cos) -> 2IzSz -> -2IySz
+==============================
+I: ----90x---
+			         
+S: --90q[x]--
+
+
+-2IySz -> IxE
+==============================
+I: --tau--180x--tau
+			         
+S: --tau--180x--tau
+
+
+SIN::
+=====
+2IzSx (sin) -> -2IzSz -> -2IySz
+================================
+I: ----90x---
+			         
+S: --90q[y]--
+
+
+-2IySz -> IxE
+===============
+I: --tau--180x--tau
+			         
+S: --tau--180x--tau
+
+
+
+
+
+CPMG-RD (Lewis Kay): original
+
+---------------|--Tau_RD--------Tau_RD--|   --tau--180x--tau--|--Tau_RD--------Tau_RD--|-----------------------
+--tau_eq--90x--|--Tau_RD--180y--Tau_RD--|[n]--tau--180x--tau--|--Tau_RD--180y--Tau_RD--|[n]--90y--tau_eq--90y--
+			    				
+[n]: looped n times
+tau_eq =2.5/kex~ 5ms
+
+
+Observed: peaks are inphase contraraily intensity decreases with n
+
+Ref: J. Phys. Chem. B 2008, 112, 5898-5904 ; D. Flemming Hansen, Pramodh Vallurupalli, and Lewis E. Kay
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Functions to access the msys variables:
+
+int multi_sys::NComps() const { return _Comps.size(); }
+
+
+  	multi_sys sys;				// Declare spin system sys
+
+
+
+  	cout << "Sys_comps" << sys.NComps();
+
+
+
+double multi_sys::pop(int icomp) const
+
+
+  	cout << "Sys_pop_1" << sys.pop(0);
+  	cout << "Sys_pop_2" << sys.pop(1);
+
+
+multi_sys::Kex(int iex)
+
+  	cout << "Sys_kex" << sys.Kex(0);
+
+
+const string multi_sys::symbol(int comp, int spin) const
+
+Tried:6 Apr 2025
+================
+I: 90x--tau--180x--tau--90x--|  	|-------90x-------tau--180x--tau--t2
+			         CPMG
+S: -----tau--180x--tau--90x--|  	|---t1--90q[x,y]--tau--180x--tau
+
+
+
+CPMG-RD (Lewis Kay)
+
+-|--Tau_RD--------Tau_RD--|-----tau--180x--tau--|--Tau_RD--------Tau_RD--|
+-|--Tau_RD--180y--Tau_RD--|[n]--tau--180x--tau--|--Tau_RD--180y--Tau_RD--|[n]
+			    				
+[n]: looped n times
+
+also tired:(Loria 1999a)
+
+-|--Tau_RD--------Tau_RD--|-----tau--180x--tau--|--Tau_RD--------Tau_RD--|
+-|--Tau_RD--180y--Tau_RD--|[n]--tau--180x--tau--|--Tau_RD--180x--Tau_RD--|[n]
+			    				
+[n]: looped n times
+
+
+Observed: peaks are inphase contraraily intensity decreases with n
+
+
+
+
+
+
+
+	//double offset = sys.center();
+	//sys.offsetShifts(offset,0);
+	//sys.offsetShifts(offset,1);
+  	double lw =2.0;
+	double SW=4000.0;
+	double NyqF = SW/2.0;
+	double dt=1.0/SW;
+
+	string IsoI, IsoS,IsoDec_H,IsoDec_N; // Two isotope types
+	int isoS, isoI, t1pts, t2pts;
+	double  NyqFS, NyqFI, SwI, SwS;
+	//setup_2D(sys, IsoS, IsoI, isoS, isoI,offS, offI, NyqFS, NyqFI, t2pts, t1pts);
+
+	isoI=0;		// Proton
+	IsoI="1H";
+
+	isoS=1;		// 15N
+	IsoS="15N";
+
+
+
+	t1pts=256;  
+	t2pts=1024;
+
+
+	SwI=SW;
+	SwS=SW;
+
+	NyqFI=SwI/2.0;
+	NyqFS=SwS/2.0;
+
+	double t2dt = 1.0/SwI; // Dwell time, quadrature
+	double t1dt = 1.0/SwS; // Dwell time, indirect dimension
+
+	string J;
+ 	J="w"; // Weak "w" or strong coupling "s"
+
+
+	// Set Up Operators, Superoperator
+	gen_op H; // Set Hamilitonian for
+
+	//if(J == "w") // Strong or weak coupling
+	//H = Hcs(sys) + HJw(sys);
+	//else
+	//H = Hcs(sys) + HJwh(sys);
+
+
+	//H = Hcs(sys) + HJw(sys);
+ 	H = Ho(sys);	
+		cout << "\n H \n"; cout << H;	//getchar();
+/*		
+	gen_op H1 = H;
+ 	H1.set_EBR();			
+		cout << "\n H1 \n"; cout << H1; //getchar();	
+*/
+			
+	gen_op D = Fm(sys, IsoI); // Detector to F	
+		cout << "\n D \n"; cout << D;	//getchar();
+		
+/*
+	gen_op U_I90x = Ixypuls_U(sys,0.0,90.0,isoI); // Prop for 90_x pulse (phi:x,y,-x,-y:0,90,180,270: theta: flip angle)
+	gen_op U_I180x = Ixypuls_U(sys, 0.0, 180.0, isoI); // Prop for 180_x pulse
+
+	gen_op U_I90y = Ixypuls_U(sys, 90.0, 90.0, isoI); // Prop for 90_y pulse
+
+	gen_op U_S90x = Ixypuls_U(sys, 0.0, 90.0, isoS); // Prop for 180_x pulse
+	gen_op U_S180x = Ixypuls_U(sys, 0.0, 180.0, isoS); // Prop for 180_x pulse
+
+	gen_op U_S90y = Ixypuls_U(sys, 90.0, 90.0, isoS); // Prop for 90_y pulse
+*/
+
+	gen_op U_I90x_1 = Ixpuls_U(sys,0,90.0,0); // Prop for 90_x pulse (phi:x,y,-x,-y:0,90,180,270: theta: flip angle)
+	gen_op U_I90x_2 = Ixpuls_U(sys,0,90.0,1); // Prop for 90_x pulse (phi:x,y,-x,-y:0,90,180,270: theta: flip angle)
+	// gen_op U_I90x =U_I90x_1+U_I90x_2;
+
+	cout << "\n U_I90x_1 \n" <<U_I90x_1;
+	cout << "\n U_I90x_2 \n" <<U_I90x_2;
+
+	gen_op U_I180x_1 = Ixpuls_U(sys, 0, 180.0, 0); // Prop for 180_x pulse
+	gen_op U_I180x_2 = Ixpuls_U(sys, 0, 180.0, 1); // Prop for 180_x pulse
+	// gen_op U_I180x = U_I180x_1+U_I180x_2; // Prop for 180_x pulse
+
+	cout << "\n U_I180x_1 \n" <<U_I180x_1;
+	cout << "\n U_I180x_2 \n" <<U_I180x_2;
+	//getchar();
+	
+	
+	gen_op U_I180y_1 = Iypuls_U(sys, 0, 180.0, 0); // Prop for 180_y pulse
+	gen_op U_I180y_2 = Iypuls_U(sys, 0, 180.0, 1); // Prop for 180_y pulse
+	// gen_op U_I180x = U_I180x_1+U_I180x_2; // Prop for 180_x pulse
+
+	cout << "\n U_I180y_1 \n" <<U_I180y_1;
+	cout << "\n U_I180y_2 \n" <<U_I180y_2;
+	//getchar();
+
+	gen_op U_I90y_1 = Iypuls_U(sys, 0, 90.0, 0); // Prop for 90_y pulse
+	gen_op U_I90y_2 = Iypuls_U(sys, 0, 90.0, 1); // Prop for 90_y pulse
+	// gen_op U_I90y = U_I90y_1+U_I90y_2; // Prop for 90_y pulse
+
+	cout << "\n U_I90y_1 \n" <<U_I90y_1;
+	cout << "\n U_I90y_2 \n" <<U_I90y_2;
+
+
+	gen_op U_S90x_1 = Ixpuls_U(sys, 1, 90.0, 0); // Prop for 180_x pulse
+	gen_op U_S90x_2 = Ixpuls_U(sys, 1, 90.0, 1); // Prop for 180_x pulse
+	// gen_op U_S90x = U_S90x_1+U_S90x_2; // Prop for 180_x pulse
+
+	cout << "\n U_S90x_1 \n" <<U_S90x_1;
+	cout << "\n U_S90x_2 \n" <<U_S90x_2;
+
+	gen_op U_S180x_1 = Ixpuls_U(sys, 1, 180.0, 0); // Prop for 180_x pulse
+	gen_op U_S180x_2 = Ixpuls_U(sys, 1, 180.0, 1); // Prop for 180_x pulse
+	// gen_op U_S180x = U_S180x_1+U_S180x_2; // Prop for 180_x pulse
+
+	cout << "\n U_S180x_1 \n" <<U_S180x_1;
+	cout << "\n U_S180x_2 \n" <<U_S180x_2;
+	
+	gen_op U_S180y_1 = Iypuls_U(sys, 1, 180.0, 0); // Prop for 180_x pulse
+	gen_op U_S180y_2 = Iypuls_U(sys, 1, 180.0, 1); // Prop for 180_x pulse
+	// gen_op U_S180x = U_S180x_1+U_S180x_2; // Prop for 180_x pulse
+
+	cout << "\n U_S180y_1 \n" <<U_S180y_1;
+	cout << "\n U_S180y_2 \n" <<U_S180y_2;
+	
+	
+
+
+	gen_op U_S90y_1 = Iypuls_U(sys, 1, 90.0, 0); // Prop for 90_y pulse
+	gen_op U_S90y_2 = Iypuls_U(sys, 1, 90.0, 1); // Prop for 90_y pulse
+	// gen_op U_S90y = U_S90y_1+U_S90y_2; // Prop for 90_y pulse
+
+	cout << "\n U_S90y_1 \n" <<U_S90y_1;
+	cout << "\n U_S90y_2 \n" <<U_S90y_2;
+
+	//getchar();
+
+	// Convert Hamiltonian to Liouville superoperator
+
+ 	//super_op R = RDD(sys, H);			// Dipolar relaxation superoperator
+  	//R += RCC(sys, H);				// Add in CSA relaxation
+  	//R += RDCX(sys, H);				// Add in dipole-CSA cross relaxation
+
+  	//R += RDCX(sys, H);
+
+  	super_op L = complexi*Hsuper(H);		// L = -i[Ho, ] in rad/sec
+
+
+	int j_1,k_1;
+	Dim=L.dim();
+	D_M = L.get_mx();
+	cout <<"\n L\n" ;
+		for(j_1=0;j_1<Dim;j_1++)
+		{for(k_1=0;k_1<Dim;k_1++) { printf("%lf+%lf ",D_M.getRe(j_1,k_1),D_M.getIm(j_1,k_1)); }  printf("\n");} 
+	//getchar();
+
+
+ 	super_op R = RDD(sys,H);
+  	// R += RCC(sys, H);				// Add in CSA relaxation
+  	//R += RDCX(sys, H);				// Add in dipole-CSA cross relaxation
+
+
+/*
+	Dim=R.dim();
+	D_M = R.get_mx();
+	cout <<"\n R\n" <<L;
+		for(k=0;k<Dim;k++)
+		{for(l=0;l<Dim;l++) { cout <<D_M.getRe(k,l) << " + " << D_M.getIm(k,l)<<" i\t\t"; }  cout <<"\n";} 
+getchar();
+
+
+*/
+
+
+
+   	//L += R;					// Full Liouvillian
+
+
+
+	// Decoupled operator
+	IsoDec_H=IsoI;
+	IsoDec_N=IsoS;
+	gen_op H_Dec_H = Hcs(sys); //+ HJd(sys, IsoDec_H);
+	gen_op H_Dec_N = Hcs(sys); // + HJd(sys, IsoDec_N);
+
+	super_op L_Dec_H = complexi*Hsuper(H_Dec_H);
+	super_op L_Dec_N = complexi*Hsuper(H_Dec_N);
+	super_op K;
+	//L_Dec_H =L_Dec_H+R;
+	//L_Dec_N =L_Dec_N+R;
+
+
+
+	K=Xnm(sys); 
+
+/*	
+	Dim=K.dim();
+	D_M = K.get_mx();
+	cout <<"\n K\n" ;
+		for(j_1=0;j_1<Dim;j_1++)
+		{for(k_1=0;k_1<Dim;k_1++) { printf("%lf+%lf ",D_M.getRe(j_1,k_1),D_M.getIm(j_1,k_1)); }  printf("\n");} 
+	getchar();
+*/
+/*
+ 	super_op K1;	
+	K1=Kex(sys, H1.get_basis());
+	
+
+
+	D_M = K1.get_mx();
+	cout <<"\n L\n" ;
+		for(j_1=0;j_1<Dim;j_1++)
+		{for(k_1=0;k_1<Dim;k_1++) { printf("%lf+%lf ",D_M.getRe(j_1,k_1),D_M.getIm(j_1,k_1)); }  printf("\n");} 
+	getchar();
+*/	
+
+
+	super_op L_1 = L+R;
+	super_op L_2 = L+R+K;
+	super_op L_Dec_H_1 =L_Dec_H+R+K;
+	super_op L_Dec_N_1 =L_Dec_N+R+K;
+
+
+
+	// Apply Pulse Sequence
+
+	block_1D t2BLK(t2pts),t2BLK_1(t2pts),t2BLK_2(t2pts); // Set 1D block for output
+	block_2D t12BLK_cos(t1pts,t2pts),t12BLK_sin(t1pts,t2pts); // 2D-data matrix storage
+	double J_couple=90;
+	double tau=0.25/J_couple;
+
+	double CPMG_N=0.5; // an integer say 4,5 etc
+	int N_CPMG_Pulse=64; // #pulses in half block (TR/2) ,it determines the field strength during TR by:2, 4 ,16
+	double TR=(CPMG_N/J_couple);
+	double Tau_TR=(TR/2)/(2*N_CPMG_Pulse);
+	int cpmg_loop;
+
+	char File_Result[500];
+	sprintf(File_Result,"./NMRPipe/CPMG_RD_%dPulse_10K_kex_50A-50B_Pop.asc",N_CPMG_Pulse);
+	// CPMG RD specific
+	cout <<"\nOutfile:" << File_Result;	
+	cout <<"\nTR:" << TR;		
+	cout <<"\nTau_TR:" << Tau_TR;	//getchar();
+	
+	
+		
+
+	gen_op sigma0 = sigma_eq(sys); 		// Set density matrix equilib.
+
+	cout << sigma0;	//getchar();
+
+	gen_op sigma1_1 = evolve(sigma0, U_I90x_1); // Apply first (PI/2)x pulse on H or I
+	gen_op sigma1_2 = evolve(sigma0, U_I90x_2); // Apply first (PI/2)x pulse on H or I
+
+
+	gen_op sigma2_1 = evolve(sigma1_1, L_1, tau);	// Evolve for tau=1/2*(1/2J)
+	gen_op sigma2_2 = evolve(sigma1_2, L_1, tau);	// Evolve for tau=1/2*(1/2J)
+
+
+	gen_op sigma3_1 = evolve(sigma2_1, U_I180x_1); // Apply  (PI)x pulse on H or I
+	gen_op sigma3_2 = evolve(sigma2_2, U_I180x_2); // Apply  (PI)x pulse on H or I
+
+
+	gen_op sigma4_1 = evolve(sigma3_1, U_S180x_1); // Apply  (PI)x pulse on 15N or S
+	gen_op sigma4_2 = evolve(sigma3_2, U_S180x_2); // Apply  (PI)x pulse on 15N or S
+
+	gen_op sigma5_1 = evolve(sigma4_1, L_1, tau); // Evolve for tau=1/2*(1/2J)
+	gen_op sigma5_2 = evolve(sigma4_2, L_1, tau); // Evolve for tau=1/2*(1/2J)
+
+	gen_op sigma6_1 = evolve(sigma5_1, U_I90y_1); // Apply  (PI/2)y pulse on 1H 
+	gen_op sigma6_2 = evolve(sigma5_2, U_I90y_2); // Apply  (PI/2)y pulse on 1H 
+
+	gen_op sigma7_1 = evolve(sigma6_1, U_S90x_1); // Apply  (PI/2)x pulse on 15N 
+	gen_op sigma7_2 = evolve(sigma6_2, U_S90x_2); // Apply  (PI/2)x pulse on 15N 
+	
+	// CPMG block TR/2 -I
+	//gen_op sigma7_1_1,sigma7_1_2, sigma7_2_1,sigma7_2_2, sigma7_3_1,sigma7_3_2, sigma7_4_1,sigma7_4_2;
+	//gen_op sigma7_5_1,sigma7_5_2, sigma7_6_1,sigma7_6_2, sigma7_7_1,sigma7_7_2, sigma7_8_1,sigma7_8_2;
+
+	cout << "\nsigma7_1 -I" << sigma7_1;
+	cout << "\nsigma7_2 -I" << sigma7_2;
+	//getchar();
+
+
+
+	
+	for(cpmg_loop=0; cpmg_loop<N_CPMG_Pulse; cpmg_loop++) // Loop over all t1 increments
+	{
+	cout <<"\ncloop (I):" << cpmg_loop+1;	//getchar();
+	
+	gen_op sigma7_1_1 = evolve(sigma7_1, L_2, Tau_TR); // Evolve for TR/2
+	gen_op sigma7_1_2 = evolve(sigma7_2, L_2, Tau_TR); // Evolve for tau=1/2*(1/2J)
+	
+	gen_op sigma7_2_1 = evolve(sigma7_1_1, U_S180y_1); // Apply  (PI/2)x pulse on 15N 
+	gen_op sigma7_2_2 = evolve(sigma7_1_2, U_S180y_2); // Apply  (PI/2)x pulse on 15N 
+
+	gen_op sigma7_3_1 = evolve(sigma7_2_1, L_2, Tau_TR); // Evolve for TR/2
+	gen_op sigma7_3_2 = evolve(sigma7_2_2, L_2, Tau_TR); // Evolve for tau=1/2*(1/2J)
+	
+	sigma7_1=sigma7_3_1;
+	sigma7_2=sigma7_3_2;
+	
+	}
+	
+	
+	cout << "\nsigma7_1 -II" << sigma7_1;
+	cout << "\nsigma7_2 -II" << sigma7_2;
+	//getchar();
+	
+	
+	gen_op sigma7_a = evolve(sigma7_1, L_2, tau); // Evolve for tau=1/2*(1/2J)
+	gen_op sigma7_b = evolve(sigma7_2, L_2, tau); // Evolve for tau=1/2*(1/2J)
+
+	
+	// CPMG block pi pulse on I,S spins	
+	gen_op sigma7_4_1 = evolve(sigma7_a, U_I180x_1); // Apply  (PI)x pulse on H or I
+	gen_op sigma7_4_2 = evolve(sigma7_b, U_I180x_2); // Apply  (PI)x pulse on H or I
+	
+	gen_op sigma7_5_1 = evolve(sigma7_4_1, U_S180x_1); // Apply  (PI)x pulse on N or S
+	gen_op sigma7_5_2 = evolve(sigma7_4_2, U_S180x_2); // Apply  (PI)x pulse on N or S	
+	
+	//gen_op sigma7_5_1 = evolve(sigma7_a, U_S180x_1); // Apply  (PI)x pulse on N or S
+	//gen_op sigma7_5_2 = evolve(sigma7_a, U_S180x_2); // Apply  (PI)x pulse on N or S		
+	
+	sigma7_1 = evolve(sigma7_5_1, L_2, tau); // Evolve for tau=1/2*(1/2J)
+	sigma7_2 = evolve(sigma7_5_2, L_2, tau); // Evolve for tau=1/2*(1/2J)
+
+
+	//sigma7_a = evolve(sigma7_a, L_2, tau); // Evolve for tau=1/2*(1/2J)
+	//sigma7_b = evolve(sigma7_b, L_2, tau); // Evolve for tau=1/2*(1/2J)
+
+
+
+	//sigma7_1=sigma7_a;
+	//sigma7_2=sigma7_b;
+
+	cout << "\nsigma7_1 -III" << sigma7_1;
+	cout << "\nsigma7_2 -III" << sigma7_2;
+	//getchar();
+
+	// CPMG block TR/2 -II
+	
+
+	for(cpmg_loop=0; cpmg_loop<N_CPMG_Pulse; cpmg_loop++) // Loop over all t1 increments
+	{
+	
+	cout <<"\ncloop (II):" << cpmg_loop+1;	//getchar();
+	
+	gen_op sigma7_6_1 = evolve(sigma7_1, L_2, Tau_TR); // Evolve for TR/2
+	gen_op sigma7_6_2 = evolve(sigma7_2, L_2, Tau_TR); // Evolve for tau=1/2*(1/2J)
+	
+	gen_op sigma7_7_1 = evolve(sigma7_6_1, U_S180y_1); // Apply  (PI/2)x pulse on 15N 
+	gen_op sigma7_7_2 = evolve(sigma7_6_2, U_S180y_2); // Apply  (PI/2)x pulse on 15N 
+
+	gen_op sigma7_8_1 = evolve(sigma7_7_1, L_2, Tau_TR); // Evolve for TR/2
+	gen_op sigma7_8_2 = evolve(sigma7_7_2, L_2, Tau_TR); // Evolve for tau=1/2*(1/2J)
+	
+	sigma7_1=sigma7_8_1;
+	sigma7_2=sigma7_8_2;
+	
+	}
+
+
+	cout << "\nsigma7_1 -IV" << sigma7_1;
+	cout << "\nsigma7_2 -IV" << sigma7_2;
+	//getchar();
+	
+		
+
+	gen_op sigmat1_1,sigmat1_2,sigmat2;
+
+	//gen_op sigma13,sigma14,sigma15,sigma16,sigma17,sigma18,sigma19,sigma20,sigma21,sigma22;
+	gen_op sigma8,sigma9,sigma10,sigma11,sigma12,sigma13;
+	gen_op sigma8_1,sigma9_1,sigma10_1,sigma11_1,sigma12_1,sigma13_1;
+	gen_op sigma8_2,sigma9_2,sigma10_2,sigma11_2,sigma12_2,sigma13_2;
+
+	for(int t1=0; t1<t1pts; t1++) // Loop over all t1 increments
+	{
+
+		// Cos block for states quadrature
+
+		// t1 evolution
+		//sigmat1 = evolve(sigma7, L_Dec_H, t1*t1dt); 	// evolve for half of t1
+
+		sigmat1_1 = evolve(sigma7_1, L_Dec_H_1, t1*t1dt); 	// evolve for half of t1
+		sigmat1_2 = evolve(sigma7_2, L_Dec_H_1, t1*t1dt); 	// evolve for half of t1
+
+		sigma8_1 = evolve(sigmat1_1, U_I90x_1);
+		sigma8_2 = evolve(sigmat1_2, U_I90x_2);
+
+
+		// cos block for states quadrature
+
+		sigma9_1 = evolve(sigma8_1, U_S90x_1); 		// States Quadrature  pulse 90x for cos and 90y for sin
+		sigma9_2 = evolve(sigma8_2, U_S90x_2);
+
+		sigma10_1 = evolve(sigma9_1, L_1, tau);
+		sigma10_2 = evolve(sigma9_2, L_1, tau);
+
+		sigma11_1 = evolve(sigma10_1, U_I180x_1); // Apply  (PI)x pulse on H or I
+		sigma11_2 = evolve(sigma10_2, U_I180x_2); 
+
+		sigma12_1 = evolve(sigma11_1, U_S180x_1); // Apply  (PI)x pulse on 15N or S
+		sigma12_2 = evolve(sigma11_2, U_S180x_2);
+
+
+		sigma13_1 = evolve(sigma12_1, L_1, tau);
+		sigma13_2 = evolve(sigma12_2, L_1, tau);
+
+		// t2 evolution
+
+		//acquire1D ACQ_cos(D,L_Dec_N,1.e-3);                     // Set up acquisition
+		//acquire1D ACQ_cos_1(D,L_Dec_N_1,1.e-3);                     // Set up acquisition
+		acquire1D ACQ_cos_1(D,L_Dec_N_1,1.e-12);  
+		TTable1D TT_1= ACQ_cos_1.table(sigma13_1);               // Transitions table (no lb)
+		t2BLK_1 = TT_1.T(t2pts,t2dt);    // Frequency acquisition
+		//FID(sigma14,D,L_Dec_N,t2dt,t2pts,t2BLK); //acquisition
+		acquire1D ACQ_cos_2(D,L_Dec_N_1,1.e-12);                     // Set up acquisition
+		TTable1D TT_2= ACQ_cos_2.table(sigma13_2);               // Transitions table (no lb)
+		t2BLK_2 = TT_2.T(t2pts,t2dt);    // Frequency acquisition
+
+		t2BLK=t2BLK_1+t2BLK_2;
+		t12BLK_cos.put_block(t1, 0, t2BLK); // store it in a 2D block
+
+
+		// Sin block for states quadrature
+
+
+		sigma9_1 = evolve(sigma8_1, U_S90y_1);		// States Quadrature  pulse 90x for cos and 90y for sin
+		sigma9_2 = evolve(sigma8_2, U_S90y_2);
+
+		sigma10_1 = evolve(sigma9_1, L_1, tau);
+		sigma10_2 = evolve(sigma9_2, L_1, tau);
+
+
+		sigma11_1 = evolve(sigma10_1, U_I180x_1); // Apply  (PI)x pulse on H or I
+		sigma11_2 = evolve(sigma10_2, U_I180x_2);
+
+		sigma12_1= evolve(sigma11_1, U_S180x_1); // Apply  (PI)x pulse on 15N or S
+		sigma12_2 = evolve(sigma11_2, U_S180x_2); 
+
+		sigma13_1 = evolve(sigma12_1, L_1, tau);
+		sigma13_2 = evolve(sigma12_2, L_1, tau);
+
+		// t2 evolution
+		//acquire1D ACQ_sin(D,L_Dec_N,1.e-3);                     // Set up acquisition
+
+		acquire1D ACQ_sin_1(D,L_Dec_N_1,1.e-12);                     // Set up acquisition
+		TT_1= ACQ_sin_1.table(sigma13_1);               // Transitions table (no lb)
+		t2BLK_1 = TT_1.T(t2pts,t2dt);    // Frequency acquisition
+
+		acquire1D ACQ_sin_2(D,L_Dec_N_1,1.e-12);                     // Set up acquisition
+		TT_2= ACQ_sin_2.table(sigma13_2);               // Transitions table (no lb)
+		t2BLK_2 = TT_2.T(t2pts,t2dt);    // Frequency acquisition
+
+		t2BLK=t2BLK_1+t2BLK_2;
+		//FID(sigma14,D,L_Dec_N,t2dt,t2pts,t2BLK); //acquisition
+		t12BLK_sin.put_block(t1, 0, t2BLK); // store it in a 2D block
+
+
+	}
+
+
+
+	FILE *Hsqc; // Declare and open file
+	Hsqc=fopen(File_Result,"w");	
+	int i,j;
+
+	for( i=0; i<t1pts; i++)
+	{
+
+		for( j=0; j<t2pts; j++)
+		{ fprintf(Hsqc,"%d\t%d\t%0.12lf\t%0.12lf\n",j+1,i+1,t12BLK_cos.getRe(i,j),t12BLK_cos.getIm(i,j)); }
+
+		for( j=0; j<t2pts; j++)
+		{ fprintf(Hsqc,"%d\t%d\t%0.12lf\t%0.12lf\n",j+1,i+1,t12BLK_sin.getRe(i,j),t12BLK_sin.getIm(i,j)); }
+
+	}
+
+	fclose(Hsqc); // Close file
+
+
